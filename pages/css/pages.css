@@ -95,7 +95,7 @@ body.pace-white .pace .pace-progress {
 }
 .header.bottom {
   position: absolute;
-  bottom: 0;
+  bottom: -25px;
   top: auto;
 }
 .header.bottom.affix {
