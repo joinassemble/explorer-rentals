@@ -7248,10 +7248,12 @@ sup.dollar {
   height: 450px;
 }
 .demo-handbook {
-  bottom: -132px;
-  left: 50%;
-  margin-left: -323px;
+  bottom: -100px;
+  left: 50vw;
+  margin-left: -50vw;
   position: absolute;
+  z-index: -2;
+  max-width: 100vw;
 }
 .demo-signature {
   position: relative;
