@@ -8,8 +8,6 @@
     "browser-sync": "^2.18.13"
   },
   "scripts": {
-    "build": "node ./scripts/build",
-    "serve": "serve ./public",
     "start": "browser-sync start --server --files '*'"
   },
   "repository": {
@@ -18,13 +16,6 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "ejs": "^2.5.7",
-    "fs-extra": "^4.0.2",
-    "glob": "^7.1.2",
-    "serve": "^6.0.6",
-    "standard": "^10.0.3"
-  },
   "bugs": {
     "url": "https://github.com/joinassemble/explorer-rentals/issues"
   },
