@@ -1,22 +1,22 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
-    <title>Pages - Front End</title>
+    <title>Explorer Rentals</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="apple-touch-icon" href="pages/ico/60.png">
+    <!-- <link rel="apple-touch-icon" href="pages/ico/60.png">
     <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
     <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
     <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" /> -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta content="" name="description" />
     <meta content="" name="author" />
     <!-- BEGIN PLUGINS -->
-    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/swiper/css/swiper.css" rel="stylesheet" type="text/css" media="screen" />
@@ -26,9 +26,16 @@
     <link class="main-stylesheet" href="pages/css/pages-icons.css" rel="stylesheet" type="text/css" />
     <!-- BEGIN PAGES CSS -->
   </head>
-  <body class="pace-black">
+  <body class="">
+    <section class="container relative">
+      <div class="top-left z-index-10">
+        <div class="p-l-20 p-r-20 p-t-20 p-b-20">
+          <!-- <h1 class="block-title m-b-0 m-t-20 text-white" style="font-size: 1em; letter-spacing:19px">Explorer <small style="color:#eee;">Rentals</small></h1> -->
+        </div>
+      </div>
+    </section>
     <!-- BEGIN HEADER -->
-    <nav class="header md-header light-solid" data-pages="header" data-pages-header="autoresize" data-pages-resize-class="dark">
+    <nav class="header light-solid" data-pages="header" data-pages-autofixed="true">
       <div class="container relative">
         <!-- BEGIN LEFT CONTENT -->
         <div class="pull-left">
@@ -37,12 +44,11 @@
                  -->
           <div class="header-inner">
             <!-- BEGIN LOGO -->
-            <img src="assets/images/logo_b.png" data-src-retina="assets/images/logo_b_2x.png" class="" alt="" width="17" height="20">
+            <h5 class="block-title m-b-0 m-t-20 text-black hint-text" style="font-size: 1em; letter-spacing:9px; font-size:1.1em;">Explorer Rentals</h5>
           </div>
         </div>
         <div class="pull-right">
           <div class="header-inner">
-            <a href="#" data-toggle="search" class="search-toggle visible-sm-inline visible-xs-inline p-r-10"><i class="fs-14 pg-search"></i></a>
             <div class="visible-sm-inline visible-xs-inline menu-toggler pull-right p-l-10" data-pages="header-toggle" data-pages-element="#header">
               <div class="one"></div>
               <div class="two"></div>
@@ -62,60 +68,47 @@
           <!-- BEGIN MENU ITEMS -->
           <div class="header-inner">
             <ul class="menu">
-              <li>
-                <a href="index.html" data-text="Home">Home 
-                            <span data-text="Welcome">Welcome</span>
+              <!--<li>
+                <a class="active" href="/" data-text="Home">Home 
+                            <span data-text="Welcome">&nbsp;</span>
                           </a>
+              </li>-->
+              <li>
+                <a href="/book" data-text="Pricing">Our Land Rovers
+                            <span data-text="Plans">Trucks to hire</span> </a>
               </li>
-              <li class="classic multiline">
-                <a href="javascript:;" data-text="Elements">Elements <i class="pg-arrow_minimize m-l-5"></i>
-                          <span data-text="Shortcodes">Shortcodes</span></a>
-                <nav class="classic ">
-                  <span class="arrow"></span>
-                  <ul>
-                    <li>
-                      <a href="http://pages.revox.io/frontend/1.0/doc/#color" target="_blank">Colors</a>
-                    </li>
-                    <li>
-                      <a href="http://pages.revox.io/frontend/1.0/doc/#icons" target="_blank">Icons</a>
-                    </li>
-                    <li>
-                      <a href="http://pages.revox.io/frontend/1.0/doc/#buttons" target="_blank">Buttons</a>
-                    </li>
-                    <li>
-                      <a href="http://pages.revox.io/frontend/1.0/doc/#modals" target="_blank">Modals</a>
-                    </li>
-                    <li>
-                      <a href="http://pages.revox.io/frontend/1.0/doc/#progress_bars" target="_blank">Progress &amp; Activity</a>
-                    </li>
-                    <li>
-                      <a href="http://pages.revox.io/frontend/1.0/doc/#accordians" target="_blank">Accordians</a>
-                    </li>
-                    <li>
-                      <a href="http://pages.revox.io/frontend/1.0/doc/#tabs" target="_blank">Tabs</a>
-                    </li>
-                  </ul>
-                </nav>
+              <li class="classic multiline dark">
+                <a href="/about" data-text="Portofolio">About Us 
+                            <span data-text="Clients">And New Zealand</span></a>
+                      <nav class="classic ">
+                      <span class="arrow"></span>
+                      <ul>
+                        <li>
+                          <a href="/tents" target="_blank">Why Roof Tents?</a>
+                        </li>
+                        <li>
+                          <a href="/4x4" target="_blank">4x4 Driving in New Zealand</a>
+                        </li>
+                        <li>
+                          <a href="/pickup" target="_blank">Free Airport & Hotel Pick Up</a>
+                        </li>
+                      </ul>
+                    </nav>              
               </li>
               <li>
-                <a href="pricing.html" data-text="Pricing">Pricing
-                            <span data-text="Plans">Plans</span> </a>
-              </li>
-              <li>
-                <a href="portfolio.html" data-text="Portofolio">Portofolio 
-                            <span data-text="Clients">Clients</span></a>
-              </li>
-              <li>
-                <a href="contact.html" data-text="Contact Us" class="active">Contact Us
+                <a href="/contact" data-text="Contact Us">Contact Us
                             <span data-text="Get in touch">Get in touch </span></a>
               </li>
+              <li>
+                <a href="/book"><h3 class="btn btn-bordered fs-16 btn-black m-t-0">Reserve</h3></a>
+              </li>
             </ul>
-            <a href="#" class="search-toggle hidden-xs hidden-sm" data-toggle="search"><i class="fs-14 pg-search" ></i></a>
+            <!-- <a href="#" class="search-toggle hidden-xs hidden-sm" data-toggle="search"><i class="fs-14 pg-search" ></i></a> -->
             <!-- BEGIN COPYRIGHT FOR MOBILE -->
             <div class="font-arial m-l-35 m-r-35 m-b-20 m-t-20 visible-sm visible-xs">
-              <p class="fs-11 no-margin small-text p-b-20">Exclusive only at ,Themeforest. See Standard licenses & Extended licenses
+              <p class="fs-11 no-margin small-text p-b-20">Rent a fully kitted-out Land Rover with Roof Tent.
               </p>
-              <p class="fs-11 small-text muted">Copyright &copy; 2014 REVOX</p>
+              <p class="fs-11 small-text muted">Copyright © 2017</span> The Explorer Rentals Company <span class="hint-text">(Pixeco Ltd).</span></p>
             </div>
             <!-- END COPYRIGHT FOR MOBILE -->
           </div>
@@ -124,19 +117,74 @@
       </div>
     </nav>
     <!-- END HEADER -->
-    <section class="m-t-100 sm-m-t-30">
+
+
+
+
+
+      <section class="m-t-60 sm-p-t-30 p-b-30 bg-master-lighter" data-pages="parallax" data-pages-bg-image="/img/LR-gen-15.jpg" data-bg-overlay="black" data-overlay-opacity="0.2" style="min-height: 50vh;">
+            <div class="container ">
+              <div class="row">
+                <div class="col-sm-6">
+            <h1 class="inner p-t-100 text-white">Contact Us</h1>
+            <p class="inner p-b-50 m-b-40 text-white">Contact us on email, WhatsApp or via Facebook</p>
+
+          </div>
+        </div>
+      </div>
+      </section>
+
       <!-- START CONTACT SECTION -->
-      <section class="container container-fixed-lg p-t-65 p-b-100  sm-p-b-30 sm-m-b-30">
+      <section class="container container-fixed-lg p-t-65 sm-p-b-30 sm-m-b-30">
         <div class="row">
-          <div class="col-md-6">
-            <h2>How can we assist you?</h2>
+          <div class="col-md-6 bg-white">
+            <div class="visible-xs visible-sm b-b b-grey-light m-t-35 m-b-30"></div>
+            <div class="sm-p-l-0 sm-p-t-10 p-t-20">
+              <br>
+              <div class="row">
+                <div class="col-sm-6">
+                  <p class="fs-12 font-montserrat bold all-caps no-margin hint-text">Email </p>
+                  <p class="hint-text no-margin fs-14"><a href="mailto:james@explorer.rentals" class="btn btn-primary">james@explorer.rentals</a></p>
+                </div>
+
+                <div class="col-sm-6">
+                  <p class="fs-12 font-montserrat bold all-caps no-margin hint-text">Facebook</p>
+                  
+                  <p class="hint-text"><a href="https://www.facebook.com/Explorer-Rentals-1521894701190275" target="_blank" class="btn btn-primary"> <i class="fa fa-facebook"></i> Chat to us on Facebook</a></p>
+                </div>
+
+                <div class="col-sm-6">
+                  <p class="fs-12 font-montserrat bold all-caps no-margin hint-text">WhatsApp </p>
+                  
+                  <p class="hint-text">Contact us on</span> WhatsApp</p>
+                  <h5 class="text-primary">+64 276627272</h5>
+                </div>
+
+              </div>
+              <br>
+              <h5 class="block-title hint-text m-b-0">Registered Address</h5>
+              <br>
+              <div class="row">
+                <div class="col-sm-6">
+                  <p class="hint-text no-margin fs-14"><span class="text-black">The Explorer Rentals Company</span>
+              <br />13 Harcourt St, Dunedin, 9011
+              <br> New Zealand.</p>
+            </div>
+                            <div class="col-sm-6">
+
+                  <p class="hint-text fs-11">We don't do collections from our office, only our approved pick up points. For more information please contact us.</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 bg-white p-l-40 p-t-40">
+            <h2>Got a question?</h2>
             <div class="p-r-40 sm-p-r-0">
-              <p>Despite the UI, We thought of the User experience, With attached From Layouts you can simply categories Important fields and prioritize them.</p>
-              <br>
-              <br>
+              <p>If you'd rather, fill in the form below and we'll get back to you</p>
               <div class="panel" id="contact-panel">
-                <p class="semi-bold no-margin">Fill up this form to contact us if you have any futher questions</p>
-                <form role="form" autocomplete="off" class="m-t-15" id="contact-form" action="_lib/mail.php" method="post">
+                <form role="form" autocomplete="off" class="m-t-15" id="contact-form" name="contact" action="thank-you" data-netlify="true" method="post">
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="form-group form-group-default required">
@@ -153,14 +201,14 @@
                   </div>
                   <div class="form-group form-group-default">
                     <label class="control-label">Email</label>
-                    <input type="email" name="email" placeholder="This can be changed later" class="form-control" required>
+                    <input type="email" name="email" placeholder="Your email address" class="form-control" required>
                   </div>
                   <div class="form-group form-group-default">
                     <label class="control-label">Message</label>
                     <textarea name="message" placeholder="Type the message you wish to send" style="height:100px" class="form-control" required></textarea>
                   </div>
                   <div class="sm-p-t-10 clearfix">
-                    <p class="pull-left small hint-text m-t-5 font-arial">I hereby certify that the information above is true and accurate. </p>
+                    <p class="pull-left small hint-text m-t-5 font-arial"></p>
                     <button class="btn btn-primary font-montserrat all-caps fs-12 pull-right xs-pull-left">Submit</button>
                   </div>
                   <div class="clearfix"></div>
@@ -168,78 +216,95 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="visible-xs visible-sm b-b b-grey-light m-t-35 m-b-30"></div>
-            <div class="p-l-40 sm-p-l-0 sm-p-t-10">
-              <h3>Showcase and guide users with a <br>
-better User Interface &amp; Experience.</h3>
-              <p>Our motivation "Perfection simplified" helps to craft meaningful experiences for the people around us,This mission inspires us to jump out of bed each day and guides every aspect of what we do.</p>
-              <br>
-              <div class="row">
-                <div class="col-sm-6">
-                  <h5 class="block-title hint-text m-b-0">california </h5>
-                  <address class="m-t-10">Stanford co.
-                                <br> 54 E Pear St
-                                <br> Oklahoma city OK 73102</address>
-                  <br>
-                  <p class="hint-text no-margin"><span class="fs-12 font-montserrat bold all-caps p-r-10">Tel</span> <span class="fs-14">(877) 412-7766</span></p>
-                  <p class="hint-text"><span class="fs-12 font-montserrat bold all-caps p-r-10">Fax</span> <span class="fs-14">(877) 412-7766</span></p>
-                </div>
-                <div class="col-sm-6">
-                  <h5 class="block-title hint-text m-b-0">canada </h5>
-                  <address class="m-t-10">Station 322
-                                <br> Ottawa Ontario K1AOB1
-                                <br> Canada.
-                            </address>
-                  <br>
-                  <p class="hint-text no-margin"><span class="fs-12 font-montserrat bold all-caps p-r-10">Tel</span> <span class="fs-14">(877) 412-7766</span></p>
-                  <p class="hint-text"><span class="fs-12 font-montserrat bold all-caps p-r-10">Fax</span> <span class="fs-14">(877) 412-7766</span></p>
-                </div>
-              </div>
-              <br>
-              <h5 class="block-title hint-text m-b-0">pages Public Inquiries &amp; Communications </h5>
-              <br>
-              <div class="row">
-                <div class="col-sm-6">
-                  <p class="fs-12 font-montserrat bold all-caps no-margin hint-text">Hotline </p>
-                  <p class="hint-text no-margin fs-14">(877) 412-7766</p>
-                </div>
-                <div class="col-sm-6">
-                  <p class="fs-12 font-montserrat bold all-caps no-margin hint-text">Email </p>
-                  <p class="hint-text no-margin fs-14">support@revox.io</p>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </section>
       <!-- END CONTACT SECION -->
-      <!-- START GOOGLE MAP -->
-      <section class="container-fluid  no-padding no-overflow">
-        <!-- Map -->
-        <div id="google-map" class="full-width demo-map gradient-overlay no-overflow"></div>
-      </section>
-      <!-- END GOOGLE MAP -->
+
+<!-- START CONTENT SECTION -->
+    <section class="p-b-50 p-t-50 bg-master-darkest" data-pages-bg-image="/img/LR-gen-9.jpg" data-bg-overlay="none" data-overlay-opacity="0.5" style="background-position: center center; min-height: 70vh;">
+      <div class="">
+        <div class="container m-b-50">
+          <div class="row">
+            <div class="col-sm-5 col-sm-offset-0 m-b-50">
+              <h2 class="light m-t-5 text-white">Discover our explorer secrets</h2>
+              <h5 class="text-white">Find secret spots with our locals-only guides and itineraries</h5>
+              <form class="m-t-30 m-b-20" name="email-list" action="thank-you" netlify>
+                <div class="form-group form-group-default input-group col-md-12  col-sm-12">
+                  <label class="control-label">Email Address</label>
+                  <input type="email" placeholder="james@explorer.rentals" class="form-control">
+                  <span class="input-group-btn">
+                            <button type="button" class="btn btn-primary btn-cons">Join</button>
+                        </span>
+                  <br>
+                </div>
+                <p class="font-arial fs-12 hint-text text-white">We hate <strong>spam</strong>. We will never share your email with anyone else, ever.</p>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- END CONTENT SECTION -->
+    
     <!-- START FOOTER -->
-    <section class="p-b-30 p-t-40">
+<section class="p-b-70 p-t-55 ">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
-            <img src="assets/images/logo_black.png" width="152" height="21" data-src-retina="assets/images/logo_black_2x.png" class="logo inline m-r-50" alt="">
-            <div class="m-t-10 ">
-              <ul class="no-style fs-11 no-padding font-arial">
-                <li class="inline no-padding"><a href="#" class=" text-master p-r-10 b-r b-grey">Home</a></li>
-                <li class="inline no-padding"><a href="#" class="hint-text text-master p-l-10 p-r-10 b-r b-grey">Themeforest Profile</a></li>
-                <li class="inline no-padding"><a href="#" class="hint-text text-master p-l-10 p-r-10 b-r b-grey">Support</a></li>
-                <li class="inline no-padding"><a href="#" class="hint-text text-master p-l-10 p-r-10 xs-no-padding xs-m-t-10">Made with Pages</a></li>
-              </ul>
-            </div>
+          <div class="col-md-3">
+                        <h5 class="block-title m-b-0 m-t-20 text-black hint-text">Explorer Rentals</h5>
           </div>
-          <div class="col-sm-6 text-right font-arial sm-text-left">
-            <p class="fs-11 no-margin small-text"><span class="hint-text">Exclusive only at</span> Envato Marketplace,Themeforest <span class="hint-text">See</span> Standard licenses &amp; Extended licenses
+          <div class="col-md-5">
+            <ul class="no-style fs-12 no-padding pull-left xs-pull-left m-t-20">
+              <li class="inline no-padding"><a href="https://www.instagram.com/explorer.rentals/" target="_blank" class="text-primary fs-16"><i class="fa fa-instagram"></i></a></li>
+              <li class="inline no-padding"><a href="https://www.facebook.com/Explorer-Rentals-1521894701190275/" target="_blank" class="text-primary p-l-30 fs-16 xs-no-padding"><i class="fa fa-facebook"></i></a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="row m-t-30">
+          <div class="col-sm-3 col-xs-12 xs-m-b-20">
+            <p class="fs-14">Pick up from Queenstown, Dunedin & Christchurch
+              <br />--
+              <br> <span class="text-black">The Explorer Rentals Company</span>
+              <br />13 Harcourt St, Dunedin, 9011
+              <br> New Zealand.
             </p>
-            <p class="fs-11 muted">Copyright &copy; 2014 REVOX. All Rights Reserved.</p>
+          </div>
+          <div class="col-sm-2 col-xs-6 xs-m-b-20">
+            <ul class="no-style no-padding">
+              <li class="m-b-5 no-padding"><a class="link text-primary" href="/">Home</a></li>
+              <li class="m-b-5 no-padding"><a class="link text-primary" href="/about">About us</a></li>
+              <li class="m-b-5 no-padding"><a class="link text-primary" href="/contact">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-xs-6 xs-m-b-20">
+            <ul class="no-style no-padding">
+
+              <li class="m-b-5 no-padding"><a class="link text-primary" href="/tents" target="_blank">Why Roof Tents?</a></li>
+              <li class="m-b-5 no-padding"><a class="link text-primary" href="/4x4" target="_blank">4x4 Driving in New Zealand</a></li>
+              <li class="m-b-5 no-padding"><a class="link text-primary" href="/pickup" target="_blank">Free Airport & Hotel Pick Up</a></li>
+              <!-- <li class="m-b-5 no-padding"><a class="link text-black" href="/terms">Terms &amp; Conditions</a></li> -->
+            </ul>
+          </div>
+          <div class="col-sm-3 col-xs-6 col-sm-offset-0  xs-m-b-20">
+            <ul class="no-style no-padding">
+              <li class="m-b-5 no-padding"><a class="link btn btn-primary btn-block btn-lg" href="/book">Reservations</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="p-t-10 p-b-10 bg-master-darkest">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7">
+            <p class="fs-11 no-margin font-arial text-white small-text"><span class="hint-text">Contact us on</span> WhatsApp +64 276627272 <span class="hint-text">or via</span> <a href="https://www.facebook.com/Explorer-Rentals-1521894701190275" target="_blank"> <i class="fa fa-facebook"></i> Facebook</p>
+          </div>
+          <div class="col-sm-5 text-right">
+            <p class="fs-11 no-margin font-arial text-white small-text"><span class="hint-text">Copyright © 2017</span> The Explorer Rentals Company <span class="hint-text">(Pixeco Ltd).</span>
+            </p>
           </div>
         </div>
       </div>
@@ -261,19 +326,18 @@ better User Interface &amp; Experience.</h3>
           </div>
           <div class="container-fluid">
             <div class="inline-block bottom-right m-b-30">
-              <div class="checkbox right">
-                <input id="checkboxn" type="checkbox" value="1" checked="checked">
-                <label for="checkboxn">Search within page</label>
+              <div class="right">
               </div>
             </div>
           </div>
           <div class="container-xs-height full-height">
             <div class="col-xs-height col-middle text-center">
               <!-- BEGIN Overlay Controls !-->
-              <input id="overlay-search" class="no-border overlay-search bg-transparent col-sm-6 col-sm-offset-4" placeholder="Search..." autocomplete="off" spellcheck="false">
+              <a href="/book" class="btn btn-primary btn-lg">Start Booking</a>
+              <a href="/contact" class="btn btn-default btn-lg">Contact Us</a>
               <br>
               <div class="inline-block bottom-left m-l-10 m-b-30 hidden-xs">
-                <p class="fs-14"><i class="fa fa-search m-r-10"></i> Press enter to search</p>
+                
               </div>
               <!-- END Overlay Controls !-->
             </div>
@@ -283,24 +347,17 @@ better User Interface &amp; Experience.</h3>
       <!-- END Overlay Content !-->
     </div>
     <!-- END OVERLAY SEARCH -->
-    <!-- BEGIN CORE FRAMEWORK -->
-    <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="pages/js/pages.image.loader.js"></script>
+    <!-- BEGIN CORE FRAMEWORK -->
     <script type="text/javascript" src="assets/plugins/jquery/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- BEGIN SWIPER DEPENDENCIES -->
-    <script type="text/javascript" src="assets/plugins/swiper/js/swiper.jquery.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-validation/js/jquery.validate.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <!-- BEGIN RETINA IMAGE LOADER -->
     <script type="text/javascript" src="assets/plugins/jquery-unveil/jquery.unveil.min.js"></script>
+    <!-- BEGIN TEXT ROTATOR -->
+    <script type="text/javascript" src="assets/plugins/text-rotate/jquery.simple-text-rotator.min.js"></script>
     <!-- END VENDOR JS -->
     <!-- BEGIN PAGES FRONTEND LIB -->
     <script type="text/javascript" src="pages/js/pages.frontend.js"></script>
     <!-- END PAGES LIB -->
-    <!-- BEGIN YOUR CUSTOM JS -->
-    <script type="text/javascript" src="assets/js/custom.js"></script>
-    <script type="text/javascript" src="assets/js/contact.js"></script>
-    <script type="text/javascript" src="assets/js/google_map.js"></script>
   </body>
 </html>
