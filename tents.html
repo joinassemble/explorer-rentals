@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-105783870-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-105783870-1');
+</script>
+
+
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
     <title>Explorer Rentals</title>
@@ -34,7 +46,10 @@
       </div>
     </section>
     <!-- BEGIN HEADER -->
-    <nav class="header light-solid" data-pages="header" data-pages-autofixed="true">
+    <nav class="header bg-header light-solid">
+      <!-- BEGIN WHITE BRUSH STROKE -->
+      <div class="demo-brush bottom-left" data-pages-bg-image="assets/images/brush_stroke.png"></div>
+      <!-- END WHITE BRUSH STROKE -->
       <div class="container relative">
         <!-- BEGIN LEFT CONTENT -->
         <div class="pull-left">
@@ -73,12 +88,12 @@
                           </a>
               </li>-->
               <li>
-                <a href="/book" data-text="Pricing">Our Land Rovers
-                            <span data-text="Plans">Trucks to hire</span> </a>
+                <a href="/our-land-rovers" data-text="Pricing">Our Land Rovers
+                            <span>Trucks to hire</span> </a>
               </li>
               <li class="classic multiline dark">
-                <a href="/about" data-text="Portofolio">About Us 
-                            <span data-text="Clients">And New Zealand</span></a>
+                <a href="/about" data-text="About Us">About Us 
+                            <span data-text="And New Zealand">And New Zealand</span></a>
                       <nav class="classic ">
                       <span class="arrow"></span>
                       <ul>
@@ -117,20 +132,37 @@
     </nav>
     <!-- END HEADER -->
 
+      <section class="m-t-100 sm-p-t-30 p-b-30 bg-master-lighter" data-pages="parallax" data-pages-bg-image="/img/LR-gen-13.jpg" data-bg-overlay="black" data-overlay-opacity="0.2" style="min-height: 70vh;">
+            <div class="container ">
+              <div class="row">
+                <div class="col-sm-6">
+            <h1 class="inner p-t-100 text-white">Why rent a roof top tent?</h1>
+            <p class="inner p-b-50 m-b-40 text-white"></p>
 
+          </div>
+        </div>
+      </div>
+      </section>
 
-<!--
-WHY RENT A ROOF TOP TENT?
+    <!-- <section id="launch" class="p-b-60 p-t-60 no-overflow relative" data-pages-bg-image="img/bg-fade-01.jpg" data-bg-overlay-class="bg-white"  style="z-index: -1; background-position: center center; min-height:530px;"> -->
+
+      <section class="p-b-60 p-t-60 no-overflow relative" style="z-index: -1; background-position: center center; min-height:530px;">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h6 class="block-title m-b-0 p-t-50"></h6>
 <p>There are a number of advantages of a roof tent. Firstly it’s much quicker and easier to set up than a normal tent. It also is more comfortable as you are not on the ground but on a flat mattress. As it’s up high you’re less likely to get wet or get washed out if it rains. Although there are no dangerous or poisonous animals in New Zealand you do tend to feel safer up high. However, the best reason is the views are better - you can fall asleep to the most spectacular sunset views or wake up to awesome sunrise vistas.
 </p>
-<div>Want to explore the real New Zealand? Rent your own Land Rover for Roof Tent adventures.
-</div>
--->
+<p>Want to explore the real New Zealand? Rent your own Land Rover for Roof Tent adventures.
+</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
-
-<!-- START CONTENT SECTION -->
+    <!-- START EMAIL SECTION -->
     <section class="p-b-50 p-t-50 bg-master-darkest" data-pages-bg-image="/img/LR-gen-9.jpg" data-bg-overlay="none" data-overlay-opacity="0.5" style="background-position: center center; min-height: 70vh;">
       <div class="">
         <div class="container m-b-50">
@@ -138,10 +170,11 @@ WHY RENT A ROOF TOP TENT?
             <div class="col-sm-5 col-sm-offset-0 m-b-50">
               <h2 class="light m-t-5 text-white">Discover our explorer secrets</h2>
               <h5 class="text-white">Find secret spots with our locals-only guides and itineraries</h5>
-              <form class="m-t-30 m-b-20" name="email-list" action="thank-you" netlify>
+              <form class="m-t-30 m-b-20" name="email-list" action="/thanks-email" netlify>
                 <div class="form-group form-group-default input-group col-md-12  col-sm-12">
                   <label class="control-label">Email Address</label>
-                  <input type="email" placeholder="" class="form-control">
+                  <input type="email" name="email" placeholder="" class="form-control">
+                  <label style="display: none;">Don’t fill this out: <input name="bot-field"></label>
                   <span class="input-group-btn">
                             <button type="submit" class="btn btn-primary btn-cons">Join</button>
                         </span>
@@ -155,8 +188,8 @@ WHY RENT A ROOF TOP TENT?
         </div>
       </div>
     </section>
-    <!-- END CONTENT SECTION -->
-    
+    <!-- END EMAIL SECTION -->
+
     <!-- START FOOTER -->
 <section class="p-b-70 p-t-55 ">
       <div class="container">
@@ -179,6 +212,7 @@ WHY RENT A ROOF TOP TENT?
               <br> <span class="text-black">The Explorer Rentals Company</span>
               <br />13 Harcourt St, Dunedin, 9011
               <br> New Zealand.
+              <br />Tel. +64 (0)27 6627272
             </p>
           </div>
           <div class="col-sm-2 col-xs-6 xs-m-b-20">
@@ -186,6 +220,7 @@ WHY RENT A ROOF TOP TENT?
               <li class="m-b-5 no-padding"><a class="link text-primary" href="/">Home</a></li>
               <li class="m-b-5 no-padding"><a class="link text-primary" href="/about">About us</a></li>
               <li class="m-b-5 no-padding"><a class="link text-primary" href="/contact">Contact us</a></li>
+              <li class="m-b-5 no-padding"><a class="link text-primary" href="/login">Log in</a></li>
             </ul>
           </div>
           <div class="col-sm-4 col-xs-6 xs-m-b-20">
@@ -199,7 +234,8 @@ WHY RENT A ROOF TOP TENT?
           </div>
           <div class="col-sm-3 col-xs-6 col-sm-offset-0  xs-m-b-20">
             <ul class="no-style no-padding">
-              <li class="m-b-5 no-padding"><a class="link btn btn-primary btn-block btn-lg" href="/book">Reservations</a></li>
+              <li class="m-b-15 no-padding"><a class="link btn btn-primary btn-block btn-lg" href="/book">Reservations</a></li>
+              <li class="m-b-5 no-padding text-center"><a class="link text-primary" href="/login">Log in</a> to change an existing reservation</li>
             </ul>
           </div>
         </div>
@@ -268,5 +304,22 @@ WHY RENT A ROOF TOP TENT?
     <!-- BEGIN PAGES FRONTEND LIB -->
     <script type="text/javascript" src="pages/js/pages.frontend.js"></script>
     <!-- END PAGES LIB -->
+
+    <script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 834848456;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/834848456/?guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
   </body>
 </html>
